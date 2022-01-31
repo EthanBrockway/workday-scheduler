@@ -7,27 +7,27 @@ $(document).ready(function () {
 
     localStorage.setItem(time, text);
   });
-  var timeTrack = function () {
+  function timeTrack() {
     var timeNow = moment().hour();
 
     $(".time-block").each(function () {
-      var timeBlock = parseInt$(this).attr("id").split("hour")[1];
+      var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
 
-      if (timeBlock > timeNow) {
-        $(this).removeClass("past");
+      if (timeBlock < timeNow) {
+        $(this).removeClass("future");
         $(this).removeClass("present");
-        $(this).addClass("future");
+        $(this).addClass("past");
       } else if (timeBlock === timeNow) {
         $(this).removeClass("future");
         $(this).removeClass("past");
         $(this).addClass("present");
       } else {
-        $(this).removeClass("future");
+        $(this).removeClass("past");
         $(this).removeClass("present");
-        $(this).addClass("past");
+        $(this).addClass("future");
       }
     });
-  };
+  }
   $("#hr8 .description").val(localStorage.getItem("hr8"));
   $("#hr9 .description").val(localStorage.getItem("hr9"));
   $("#hr10 .description").val(localStorage.getItem("hr10"));
