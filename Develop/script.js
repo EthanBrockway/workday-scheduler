@@ -28,4 +28,16 @@ $(document).ready(function () {
       }
     });
   };
+  $("#hr8 .description").val(localStorage.getItem("hour8"));
+  $("#hr9 .description").val(localStorage.getItem("hour9"));
+  $("#hr10 .description").val(localStorage.getItem("hour10"));
+  $("#hr11 .description").val(localStorage.getItem("hour11"));
+  $("#hr12 .description").val(localStorage.getItem("hour12"));
+  $("#hr13 .description").val(localStorage.getItem("hour13"));
+  $("#hr14 .description").val(localStorage.getItem("hour14"));
+  $("#hr15 .description").val(localStorage.getItem("hour15"));
+  $("#hr16 .description").val(localStorage.getItem("hour16"));
+  $("#hr17 .description").val(localStorage.getItem("hour17"));
+
+  timeTrack();
 });
