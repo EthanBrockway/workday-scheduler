@@ -1,6 +1,6 @@
 # Workday-Scheduler
 ![screencapture-127-0-0-1-5500-index-html-2022-01-30-23_30_49](https://user-images.githubusercontent.com/95703604/151743663-fa726779-bab5-462c-b46c-96f84aef09e2.png)
-[Link to deployed application]
+[Link to deployed application](https://skronkie.github.io/workday-scheduler/)
 ## My task
 
 ### Create a siomple calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
